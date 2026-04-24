@@ -1,0 +1,88 @@
+/* A4 */
+body {
+    font-family: "Segoe UI", Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+    width: 100%; /*  [Full_A4_Utilization] */
+}
+
+/* Heading */
+h1, h2, h3 { 
+    color: #003366; 
+    break-after: avoid; 
+    page-break-after: avoid; /* [Never_Leave_Title_at_Bottom] */
+}
+h1 { font-size: 24pt; border-bottom: 2px solid #003366; padding-bottom: 5px; margin-top: 0; }
+h2 { font-size: 18pt; border-bottom: 1px solid #ccc; margin-top: 20px; }
+h3 { font-size: 14pt; margin-top: 15px; }
+
+/* paragraph */
+p {
+    margin-bottom: 10px;
+    orphans: 3;
+    widows: 3;
+}
+
+/* Backtics */
+code {
+    font-family: "Consolas", monospace;
+    background-color: #f3f3f3;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 90%;
+    display: inline;
+    color: #c7254e;
+}
+
+/* code blocks */
+pre {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 15px 0;
+    page-break-inside: avoid; /*  [Keep_Logs_Together] */
+}
+
+/* images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 400px; /*  [Makes_Images_Easier_to_Fit] */
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: auto;
+    word-break: break-word; /*[Prevents_Table_Overflow] */
+}
+
+th { background-color: #003366; color: white; padding: 10px; text-align: left; border: 1px solid #003366; }
+td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+
+/* <div> */
+.finding {
+    page-break-inside: avoid; /*[Paragraph_and_Image_Bond] */
+    break-inside: avoid;
+    margin-bottom: 25px;
+    display: block;
+    width: 100%;
+}
+
+/* Tarka: [Layout] ↔ {A4_Invariants} */
+@page {
+    margin: 1.5cm 2cm;
+}

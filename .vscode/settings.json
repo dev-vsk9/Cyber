@@ -1,0 +1,23 @@
+{
+        "markdown.copyFiles.destination": {
+        "**/*": "${documentDirName}/Assets/"
+    },
+
+    "markdown.copyFiles.referenceStyle": "relative",
+    
+    "markdown.copyFiles.overwriteBehavior": "nameIncrementally"
+,
+    // Custom css
+    "markdown-pdf.styles": [
+        "D:\\my_dev_space\\Cyber\\Toolbox\\report.css"
+    ],
+    "markdown-pdf.format": "A4",
+    "markdown-pdf.margin.top": "20mm",
+    "markdown-pdf.margin.bottom": "20mm",
+    "markdown-pdf.margin.left": "20mm",
+    "markdown-pdf.margin.right": "20mm",
+    "markdown-pdf.headerTemplate": "<div style='display:none;'></div>",
+    "markdown-pdf.displayHeaderFooter": true,
+    "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin-left: 20px;\"><span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></div>"
+
+}
