@@ -1,0 +1,22 @@
+# Tarka: [CATEGORY 1: TAMASIC ARTIFACTS]
+# Tarka: (Ignore) @ [Generated_PDFs] ∵ [Redundant_Binary_Bloat]
+*.pdf
+
+# Tarka: [CATEGORY 2: SYSTEM MOHA (OS NOISE)]
+# Tarka: (Ignore) @ [Windows_Trash]
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.vscode/*
+!.vscode/settings.json
+.history/
+*.log
+
+.env
+*.key
+*.token
