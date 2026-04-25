@@ -1,8 +1,12 @@
 /* A4 */
+@page {
+    margin: 1.5cm; /* Balanced margins for binding/stapling */
+}
+
 body {
-    font-family: "Segoe UI", Tahoma, Helvetica, Arial, sans-serif;
+    font-family:  "Inter", "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 11pt;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #1a1a1a;
     text-align: left;
     margin: 0; 
@@ -12,19 +16,29 @@ body {
 
 /* Heading */
 h1, h2, h3 { 
-    color: #003366; 
+    color: #002b5c;
     break-after: avoid; 
     page-break-after: avoid; /* [Never_Leave_Title_at_Bottom] */
+    
 }
 h1 { font-size: 24pt; border-bottom: 2px solid #003366; padding-bottom: 5px; margin-top: 0; }
 h2 { font-size: 18pt; border-bottom: 1px solid #ccc; margin-top: 20px; }
 h3 { font-size: 14pt; margin-top: 15px; }
+
+h3 + p {
+    page-break-before: avoid;
+}
 
 /* paragraph */
 p {
     margin-bottom: 10px;
     orphans: 3;
     widows: 3;
+}
+
+p + img, 
+pre + img {
+    page-break-before: avoid; 
 }
 
 /* Backtics */
@@ -52,11 +66,13 @@ pre {
 /* images */
 img {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     height: auto !important;
-    max-height: 400px; /*  [Makes_Images_Easier_to_Fit] */
-    margin: 10px 0 20px 0;
+    /* max-height: 400px; /*  [Makes_Images_Easier_to_Fit] */ */
+    max-height: 40vh !important; 
+    margin: 10px auto;
     border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     page-break-inside: avoid;
 }
 
@@ -66,23 +82,27 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     table-layout: auto;
+    font-size: 10pt;
     word-break: break-word; /*[Prevents_Table_Overflow] */
 }
 
-th { background-color: #003366; color: white; padding: 10px; text-align: left; border: 1px solid #003366; }
-td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
-tr:nth-child(even) { background-color: #f9f9f9; }
+th { background-color: #003366; color: white; padding: 10px; text-align: left; border: 1px solid #003366;font-weight: 600; }
+td { padding: 8px; border: 1px solid #eee; vertical-align: top; }
+tr:nth-child(even) { background-color: #fcfcfc; }
 
 /* <div> */
 .finding {
-    page-break-inside: avoid; /*[Paragraph_and_Image_Bond] */
-    break-inside: avoid;
+    page-break-inside: auto  !important; /*[Paragraph_and_Image_Bond] */
+    break-inside: auto  !important;
     margin-bottom: 25px;
     display: block;
+    padding: 5px 10px;
     width: 100%;
 }
 
-/* Tarka: [Layout] ↔ {A4_Invariants} */
-@page {
-    margin: 1.5cm 2cm;
+
+.tight-fit {
+    max-height: 200px !important;
+    width: auto !important;
+    margin: 5px auto !important;
 }
