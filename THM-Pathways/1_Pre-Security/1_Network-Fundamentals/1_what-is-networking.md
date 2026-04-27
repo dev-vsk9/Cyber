@@ -1,7 +1,3 @@
-This is a professional, clean format optimized for technical documentation and public uploads. All Tarka-specific notation and symbolic operators have been removed and replaced with standard English descriptive logic and professional grammar.
-
-***
-
 # Technical Learning Report: Introduction to Networking
 
 | Attribute            | Details                                        |
@@ -77,6 +73,7 @@ The Internet Control Message Protocol is a diagnostic, echo-based system used fo
 
 **Practical Exercise: MAC Spoofing**
 Bypassing a restricted gateway by assuming the physical identity of an authorized node.
+
 ![FIGURE 01: Successful MAC spoofing to bypass network authentication](Assets/THM-WIN-MAC.png)
 *   **Flag Captured:** THM{YOU_GOT_ON_TRYHACKME}
 
@@ -88,6 +85,7 @@ Bypassing a restricted gateway by assuming the physical identity of an authorize
 
 **Practical Exercise: ICMP Verification**
 Measuring connectivity and reachability to a global DNS resolver.
+
 ![FIGURE 02: Verification of node reachability via ICMP Echo Reply](Assets/THM-WIN-PING.png)
 *   **Flag Captured:** THM{I_PINGED_THE_SERVER}
 
