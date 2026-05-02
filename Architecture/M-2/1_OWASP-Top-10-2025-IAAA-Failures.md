@@ -56,26 +56,26 @@ A failure in accountability means an attacker can operate within the system with
 *   **Question:** What is the note you found when viewing the user's account who had more than $1 million?
 *   **Answer:** THM{Found.the.Millionare!}
 
-![FIGURE 01: Manipulating accountID parameters to perform an IDOR attack and extract sensitive user notes](Assets/image.png)
+![FIGURE 01: Manipulating accountID parameters to perform an IDOR attack and extract sensitive user notes](Assets/IAAA-A01.png)
 
 ### Task 4: A07: Authentication Failures
 *   **Question:** What is the flag on the admin user's dashboard?
 *   **Answer:** THM{Account.confusion.FTW!}
 
-![FIGURE 02: Exploiting registration logic flaws via username case-variation to bypass administrative authentication](Assets/image-1.png)
+![FIGURE 02: Exploiting registration logic flaws via username case-variation to bypass administrative authentication](Assets/IAAA-A07.png)
 
 ### Task 5: A09: Logging & Alerting Failures
 *   **Question:** It looks like an attacker tried to perform a brute-force attack, what is the IP of the attacker?
 *   **Answer:** 203.0.113.45
 
-![FIGURE 03: Analyzing server access logs to identify source IP addresses involved in high-frequency failed login attempts](Assets/image-2.png)
+![FIGURE 03: Analyzing server access logs to identify source IP addresses involved in high-frequency failed login attempts](Assets/IAAA-A09-LOG.png)
 
 *   **Question:** Looks like they were able to gain access to an account! What is the username associated with that account?
 *   **Answer:** admin
 *   **Question:** What action did the attacker try to do with the account? List the endpoint they accessed.
 *   **Answer:** /supersecretadminstuff
 
-![FIGURE 04: Forensic investigation of post-authentication logs to track unauthorized access to sensitive administrative endpoints](Assets/image-3.png)
+![FIGURE 04: Forensic investigation of post-authentication logs to track unauthorized access to sensitive administrative endpoints](Assets/IAAA-A09-USER.png)
 
 ---
 
